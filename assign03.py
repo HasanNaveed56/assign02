@@ -1,3 +1,5 @@
+# Question 1
+
 class Students:
     def __init__(self,name,age,roll_num=None):
         self.name = name
@@ -29,3 +31,31 @@ s1.set__marks(85)
 
 print("Marks:", s1.get__marks())  
 print("Roll Number:", s1.roll_num)  
+
+# Question 2
+
+class Person:   #parent class
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+class Student(Person): #single inheritance
+    def __init__(self,name,age,marks):
+        super().__init__(name,age)
+        self.marks = marks
+
+class Moniter(Student): #multilevel inheritance
+   
+   pass
+
+class Sports(Student): #multiple inheritance
+    pass
+
+class AllRounder(Moniter,Sports):  #multiple inheritance
+    pass
+
+class Teacher(Person): #hierarchical inheritance
+    pass
+
+class Principal(Person): #hierarchical inheritance
+    pass

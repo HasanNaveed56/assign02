@@ -1,4 +1,4 @@
-# Question 1
+# Section 1 #Encapsulation
 
 class Students:
     def __init__(self,name,age,roll_num=None):
@@ -32,7 +32,7 @@ s1.set__marks(85)
 print("Marks:", s1.get__marks())  
 print("Roll Number:", s1.roll_num)  
 
-# Question 2
+# Section 2 #Inheritance
 
 class Person:   #parent class
     def __init__(self,name,age):
@@ -60,7 +60,7 @@ class Teacher(Person): #hierarchical inheritance
 class Principal(Person): #hierarchical inheritance
     pass
 
-# Question 3
+# Section 3 #Polymorphism
 
 class Animal:
     def sound(self):
@@ -99,7 +99,7 @@ print("Sum : ", n1 + n2)
 c = Cat()
 c.sound()
 
-# Question 4
+# Section 4 #Abstraction
 
 from abc import ABC, abstractmethod
 

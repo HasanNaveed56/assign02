@@ -98,3 +98,50 @@ print("Sum : ", n1 + n2)
 
 c = Cat()
 c.sound()
+
+# Question 4
+
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        pass
+
+    @abstractmethod
+    def stop(self): 
+        pass
+
+class Car(Vehicle):
+    def start(self):
+        print("Car started")
+
+    def stop(self):
+        print("Car stopped")
+
+class Bike(Vehicle):
+    def start(self):
+        print("Bike started")
+
+    def stop(self):
+        print("Bike stopped")
+
+class Train(Vehicle):
+    def start(self):
+        print("Train started")
+
+    def stop(self):
+        print("Train stopped")
+
+c = Car()
+b = Bike()
+t = Train()
+
+c.start()
+c.stop()
+
+b.start()
+b.stop()
+
+t.start()
+t.stop()

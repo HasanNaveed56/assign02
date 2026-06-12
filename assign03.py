@@ -59,3 +59,42 @@ class Teacher(Person): #hierarchical inheritance
 
 class Principal(Person): #hierarchical inheritance
     pass
+
+# Question 3
+
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+
+print ("list of strings", len("Hello, World!"))
+print ("list of integers", len([1, 2, 3, 4, 5]))
+
+class Number:
+    def __init__(self, value):
+        self.value = value
+
+    def __add__(self):
+        return self.value + self.value
+    
+class Cat(Animal):
+    def sound(self):
+        print("Cat meows")
+
+a = Animal()
+d = Dog()
+
+a.sound()
+d.sound()
+
+
+n1 = (int(input("Enter first number: ")))
+n2 = (int(input("Enter second number: ")))
+
+print("Sum : ", n1 + n2)
+
+c = Cat()
+c.sound()
